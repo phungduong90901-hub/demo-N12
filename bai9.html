@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+
+<h3>Kiểm tra số chẵn lẻ</h3>
+
+<input type="number" id="n" placeholder="Nhập số">
+
+<br><br>
+<button onclick="kiemtra()">Kiểm tra</button>
+
+<h4 id="kq"></h4>
+
+<script>
+function kiemtra() {
+    let n = parseInt(document.getElementById("n").value);
+
+    if (n % 2 == 0) {
+        document.getElementById("kq").innerHTML = n + " là số chẵn";
+    } else {
+        document.getElementById("kq").innerHTML = n + " là số lẻ";
+    }
+}
+</script>
+
+</body>
+</html>

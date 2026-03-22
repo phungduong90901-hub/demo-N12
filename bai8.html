@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+
+<h3>Tính tổng 2 số</h3>
+
+<input type="number" id="a" placeholder="Nhập a">
+<input type="number" id="b" placeholder="Nhập b">
+
+<br><br>
+<button onclick="tong()">Tính</button>
+
+<h4 id="kq"></h4>
+
+<script>
+function tong() {
+    let a = parseFloat(document.getElementById("a").value);
+    let b = parseFloat(document.getElementById("b").value);
+
+    let kq = a + b;
+
+    document.getElementById("kq").innerHTML = "Tổng = " + kq;
+}
+</script>
+
+</body>
+</html>

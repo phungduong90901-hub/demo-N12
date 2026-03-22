@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+
+<h3>Chọn kích thước kem</h3>
+
+<input type="radio" value="Lớn" name="co" checked>Lớn<br>
+<input type="radio" value="Vừa" name="co">Vừa<br>
+<input type="radio" value="Nhỏ" name="co">Nhỏ<br>
+
+<br>
+<button onclick="chonco()">Chọn cỡ</button>
+
+<h4 id="kq"></h4>
+
+<script>
+function chonco() {
+    let arr = document.getElementsByName("co");
+    let size = "";
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].checked) {
+            size = arr[i].value;
+        }
+    }
+
+    document.getElementById("kq").innerHTML = 
+        "Bạn chọn size: " + size;
+}
+</script>
+
+</body>
+</html>
