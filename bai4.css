@@ -1,0 +1,37 @@
+body {
+    background-color: #212529;
+    font-family: Arial, sans-serif;
+}
+
+
+.card {
+    max-width: 500px;
+    margin: auto;
+    background-color: #343a40;
+    color: white;
+}
+
+.form-check {
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.kem-que { background-color: #b30000; }
+.kem-dau { background-color: #cc0066; }
+.kem-bo  { background-color: #e68a00; }
+.kem-vani { background-color: #6600cc; }
+.form-check:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+#kemDaChon {
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 12px;
+    background-color: #358255; 
+    color: white;
+    font-weight: bold;
+}
