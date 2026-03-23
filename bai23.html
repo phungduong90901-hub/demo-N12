@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1 - Form Validation</title>
+</head>
+<body>
+
+<h3>Kiểm tra dữ liệu Form</h3>
+
+<form onsubmit="return validateForm()">
+    Nhập số:
+    <input type="text" id="num1"><br><br>
+
+    Lặp lại:
+    <input type="text" id="num2"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateForm() {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+
+    if (a === "" || b === "") {
+        alert("Dữ liệu không được để trống");
+        return false;
+    }
+
+    if (a === b) {
+        alert("Hai giá trị không được giống nhau");
+        return false;
+    }
+
+    alert("Dữ liệu hợp lệ");
+    return true;
+}
+</script>
+
+</body>
+</html>
