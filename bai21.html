@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="mb-3">
+            <label class="form-label fw-bold">Nhap noi dung:</label><br/>
+            <textarea class="form-control bg-info" id="NoiDung" name="NoiDung" cols="50" rows="10" onkeyup="KiemTra()"></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label fw-bold">So ky tu:</label>
+            <input class="form-control bg-warning text-dark fw-bold" style="width: 50px;" type="text" name="SoKyTu" id="SoKyTu" readonly/>
+        </div>
+
+    </div>
+    <script>
+        function KiemTra(){
+            let chuoi = document.getElementById("NoiDung").value;
+            let doDai = chuoi.length;
+
+            document.getElementById("SoKyTu").value = doDai;
+            if(doDai > 200){
+                alert('Bạn đã gõ quá số ký tự cho phép!')
+            }
+        }
+    </script>
+</body>
+</html>
